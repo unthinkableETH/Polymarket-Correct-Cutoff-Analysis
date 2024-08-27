@@ -1,7 +1,7 @@
 from dune_client.client import DuneClient
 import pandas as pd
 dune = DuneClient("API-KEY") #Replace with your Dune API Key inside quotes <==========================================
-query_result = dune.get_latest_result((4019813) #Replace with your Query Number <==================================== https://dune.com/queries/4019813 at this link you can find query to use this code by changing takerAssetId and makerAssetId 
+query_result = dune.get_latest_result((4019813) #Replace with your Query Number <==================================== https://dune.com/queries/4019813 at this link you can find the query to use this code by changing takerAssetId and makerAssetId 
 
 # Extract rows from the ExecutionResult object
 rows = query_result.result.rows
